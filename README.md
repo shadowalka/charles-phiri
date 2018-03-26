@@ -1,2 +1,2 @@
 # charles-phiri
-jS quiz
+Hie, Charles here, a newbie in jS programming.
