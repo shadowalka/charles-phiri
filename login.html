@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>World Athletics Recruits</title>
+    <!-- Required meta tags  ctrl + } for indent-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS :OFFSET classes is used to move columns-->
+       
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/custom.css">
+      <link rel="stylesheet" href="css/normalize.css"> 
+      <link href="http://fonts.googleapis.com/css?family=Nunito:400,300" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+   </head>
+    <body id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
+
+     <!--      Navbar-->
+          <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top"><!--fixed-top:to fix the navbar to the top-->
+            <div class="container"> <!--is used to center the navbar n flush with the page-->
+      <a class="navbar-brand order-1 mr-0" href="https://https:/www.war.co.zw" target="_blank">Powered by W.A.R</a> <!--Navbar-brand: cn b used to link the class to your company product or project, target_blank: is for opening a new window, order-1: is to swap/ shift the link to the brand name to the far right of the webpage: mr-0 is to fluash the Presented by with the margin-right-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="gallery.html">Gallery</a>
+             <a class="nav-item nav-link" href="contact.html">Contact US</a>
+            <a class="nav-item nav-link" href="login.html">Login</a>
+          <a class="nav-item nav-link" href="about.html">About US</a>
+        </div>
+      </div>
+       </div>       
+    </nav>
+      <!-- /Navbar-->
+        
+     <!--jumbotron-->
+          <div class="jumbotron jumbotron-fluid bg-success text-white"> <!--bg-info: to change the background color, text-white: to change the text color-->
+      <div class="container text-sm-center pt-5"><!--text-sm-center: for centering the text, pt-5: is for increasing the jumbtron container-->
+        <h1 class="display-2 text-success">World Athletics Recruits</h1>
+        <p class="lead text-success font-weight-bold">The Springboard to your Success.</p>
+     </div>
+        </div>          
+
+    <div class="login-page">
+    <div class="form">
+        <form class="register-form">
+        <h3 class="mb-4">Sign Up</h3>
+
+        <fieldset>
+
+        <legend><span class="number">1</span> <h5>Your Basic Info</h5></legend>
+        <input type="text" id="name" name="user_name" placeholder="First Name" required>
+        <input type="text" id="user_surname" name="user_surname" placeholder="Surname" required>
+        <input type="email" id="mail" name="user_mail" placeholder="Email" required>
+        <input type="password" id="password" name="user_password" placeholder="Password" required>
+        <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required>
+        <input type="tel" id="tel" name="mobile_number" placeholder="Mobile No." required>
+
+        <legend><span class="number">2</span><h5>Gender</h5> </legend><br>
+        <input type="radio" id="Male" value="Male" name="gender"><label for="Male" class="light">Male</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" id="Female" value="Female" name="gender"><label for="Female" class="light">Female</label>
+
+        </fieldset>
+
+        <fieldset>
+
+       <legend><span class="number">3</span><h5>Sport</h5> </legend>
+        <select class="custom-select form-control" id="sport" name="user_sport"  required>
+        <optgroup label="Famous Sports">
+          <option value="Athletics" >Athletics</option>
+          <option value="Basket Ball">Basket Ball</option>
+          <option value="Cricket">Cricket</option>
+          <option value="Football">Football</option>
+        </optgroup>
+        <optgroup label="Other Sports">
+          <option value="Golf">Golf</option>
+          <option value="Hockey">Hockey</option>
+          <option value="Rugby">Rugby</option>
+          <option value="Tennis">Tennis</option>
+          <option value="Volley Ball">Volley Ball</option>
+        </optgroup>
+        </select>
+        </fieldset>
+
+        <button>Create</button>
+            <p class="message">Already Registered? <a href="#">Login</a>
+            </p>
+        </form>
+               
+        <form class="login-form">
+            <input type="text" placeholder="User Name" required>
+            <input type="password" placeholder="Password" required>
+            <button>Login</button>
+            <p class="message">Not Registered? <a href="#">Register</a></p>
+        </form>
+    </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        
+        <script>
+        $('.message a').click(function(){
+        $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+        });
+        </script> 
+    
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success auto-fixed-bottom">
+        <div class="col-md-7">
+        <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#">Terms and Conditions</a>
+        </li>
+    </ul>
+    </div>
+                
+        <div class="col-md text-md-right text-darkgreen" >
+        <small>&copy; 2018 powered by &amp; W.A.R</small>
+        </div><!-- /footer-->
+   </nav>   
+</body>
+</html>
